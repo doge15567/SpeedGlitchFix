@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+  </PropertyGroup>
+	<PropertyGroup>
+		<ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>None</ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>
+	</PropertyGroup>
+	<ItemGroup>
+	  <PackageReference Include="Bonelab.GameLibs.Steam" Version="6.0.0" />
+	</ItemGroup>
+	<ItemGroup>
+	  <Reference Include="BoneLib">
+	    <HintPath>Resources\BoneLib.dll</HintPath>
+	  </Reference>
+	</ItemGroup>
+
+</Project>
