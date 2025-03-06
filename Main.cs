@@ -42,9 +42,10 @@ namespace SpeedGlitchFix
 #endif
         }
 
-#if DEBUG
+
         
     }
+#if DEBUG
     internal static class BoneMenu
     {
         private static Page _mainCategory;
