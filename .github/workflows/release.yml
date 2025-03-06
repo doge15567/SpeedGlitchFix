@@ -55,8 +55,7 @@ jobs:
       uses: softprops/action-gh-release@v2
       with:
         draft: true
-        tag_name: Test Release
+        tag_name: test-release
         make_latest: true
         files: |
           bin/Release/**/SpeedGlitchFix.???
-          bin/Debug/**/SpeedGlitchFix.???
