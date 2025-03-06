@@ -25,19 +25,11 @@ jobs:
     - name: Restore dependencies
       run: dotnet restore
 
-    - name: release-downloader - Download Fusion v1.8.0
-      uses: robinraju/release-downloader@v1.11
-      with:
-        repository: 'Lakatrazz/BONELAB-Fusion'
-        tag: 'v1.9.0'
-        fileName: 'LabFusion.dll'
-        out-file-path: 'Resources'
-    
-    - name: release-downloader - Download BoneLib v3.1.1
+    - name: release-downloader - Download BoneLib v3.1.2
       uses: robinraju/release-downloader@v1.11
       with:
         repository: 'yowchap/BoneLib'
-        tag: 'v3.1.1'
+        tag: 'v3.1.2'
         fileName: 'BoneLib.dll'
         out-file-path: 'Resources'
 
@@ -51,10 +43,10 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: Debug
-        path: bin/Debug/**/FusionIntermediateServerHelper.???
+        path: bin/Debug/**/SpeedGlitchFix.???
     
     - name: Upload Release Builds
       uses: actions/upload-artifact@v4
       with:
         name: Release
-        path: bin/Release/**/FusionIntermediateServerHelper.???
+        path: bin/Release/**/SpeedGlitchFix.???
